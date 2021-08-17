@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>전광판 만들기</title>
+    <style>
+        
+        .name{
+            font-size: 3em;
+            color:dodgerblue;
+        }
+        input[type=button]{
+            font-size: 1.2em;
+            border: 3px solid lightblue;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="name" id="name"></div>
+    <input type="button" value="전광판 버튼" onclick="printName()">
+    <script>
+        var nickName = '숨숨~';
+        var nameLength = nickName.length; //nickName의 길이의 정수값을 nameLength에 대입
+        var myName = document.getElementById('name');
+        var namePrint = nickName.split('',nameLength); //split(나눌 문자열,분할최대횟수)
+        var i = 0;
+
+        function printName(){
+            if (i < nameLength){
+                myName.innerHTML+=namePrint[i];
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>
