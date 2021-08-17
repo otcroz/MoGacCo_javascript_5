@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='catchatbot.css'>
+    <title>챗봇</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js" 
+    integrity="sha512-o6alMAMTI5qAmVC1UvuRPgTl3UOOkP8NZ6212+rq1Oslsuy8Owt9r5Z0Wu0LNxpw/Q8N8ToGiyovHV+kyOulxg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+</head>
+<body id = "bodyTag">
+<div class="layout">
+    <div class="typing_box">
+        <div id="typing"></div>
+    </div>
+    <div id="cat_says" class="cat_says">냐앙~</div>
+    <div class="cat"></div>
+    <div class="input_layout">
+        <input type="text" id="text_say" class="input_style">
+    </div>
+    <div class="button" onclick="catsay()">
+        시키기
+    </div>
+</div>
+<script src="catchatbot.js"></script>
+</body>
+</html>
