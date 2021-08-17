@@ -1,0 +1,21 @@
+.stopwatch{ /*스톱워치 위치 및 속성 꾸미기*/
+    position:absolute;
+    top:auto;
+    left:auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: steelblue;
+    padding:30px;
+}
+
+.timer{ /*타이머 속성 꾸미기*/
+    font-size: 3em;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+input[type="button"]{ /*버튼 속성 꾸미기*/
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin-top:10px;
+}
