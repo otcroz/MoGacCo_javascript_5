@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>내가 좋아하는 영화</title>
+    <style>
+        body{
+            background-color: lavender;
+            text-align: center;
+        }
+        span{
+            font-weight:bold;
+            font-size:2em;
+            color:mediumslateblue;
+        }
+        .movieBox{
+            margin: 5% 30%;
+            
+        }
+        input[type="button"]{
+            border: 3px solid mediumpurple;
+            color:blueviolet;
+            background-color: ivory;
+        }
+        .title{
+            color:darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="movieBox">
+    <span>I like these movies.</span><br><br>
+    <input type="button" value="히트맨" onclick="recommendMovie1()">
+    <input type="button" value="스파이더맨: 파 프롬 홈" onclick="recommendMovie2()">
+    <input type="button" value="셜록: 유령신부" onclick="recommendMovie3()">
+
+    
+    <div class="title" id="title"></div>
+    <div id="poster"></div>
+    <div id="year"></div>
+    <div id="genre"></div>
+    </div>
+
+    <script>
+    var mTitle = document.getElementById('title');
+    var mposter = document.getElementById('poster');
+    var mYear = document.getElementById('year');
+    var mGenre = document.getElementById('genre');
+    
+    var hitman = {
+        title: "히트맨",
+        year: "2020.01.22",
+        genre: "코미디"
+    }
+
+    var spiderman = {
+        title: "스파이더맨: 파 프롬 홈",
+        year: "2019.07.02",
+        genre: "액션"
+    }
+
+    var sherlock = {
+        title: "셜록: 유령신부",
+        year: "2016.01.02",
+        genre: "범죄"
+    }
+    
+    function recommendMovie1(){
+        mTitle.innerHTML = "<h1>" + hitman.title + "</h1>";
+        mposter.innerHTML = "<img src=히트맨.jpg width=300 height=400>";
+        mYear.innerHTML = "개봉연도: " + hitman.year;
+        mGenre.innerHTML = "장르: "+ hitman.genre;
+    }
+    function recommendMovie2(){
+        mTitle.innerHTML = "<h1>" + spiderman.title + "</h1>";
+        mposter.innerHTML = "<img src=스파이더맨.jpg width=300 height=400>";
+        mYear.innerHTML = "개봉연도: " + spiderman.year;
+        mGenre.innerHTML = "장르: "+spiderman.genre;
+    }
+    function recommendMovie3(){
+        mTitle.innerHTML = "<h1>"+ sherlock.title + "</h1>" ;
+        mposter.innerHTML = "<img src=셜록_유령신부.jpg width=300 height=400>";
+        mYear.innerHTML = "개봉연도: " + sherlock.year;
+        mGenre.innerHTML = "장르: "+ sherlock.genre;
+    }
+    </script>
+</body>
+</html>
